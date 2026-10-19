@@ -1,6 +1,6 @@
 cask "barn-owl" do
-  version "0.11.3"
-  sha256 "59d4fbcea75d9b8be6ea54852ffa097ad350ef659b1fb7e4010be2aeae57488a"
+  version "0.12.0"
+  sha256 "3dbdd1e9a27f216e0f46cbbcabe1c6eeeec0e13f581acc717877f7f9da3ee9b0"
 
   url "https://github.com/marvika/barnowl/releases/download/v#{version}/BarnOwl-#{version}.zip"
   name "Barn Owl"
@@ -24,6 +24,8 @@ cask "barn-owl" do
 
   zap trash: [
     "~/Library/Application Support/Barn Owl",
+    "~/Library/Containers/io.github.marvika.BarnOwl.Widget",
+    "~/Library/Group Containers/2S5J2CYWPZ.io.github.marvika.BarnOwl",
     "~/Library/Caches/io.github.marvika.BarnOwl",
     "~/Library/HTTPStorages/io.github.marvika.BarnOwl",
     "~/Library/Preferences/io.github.marvika.BarnOwl.plist",
